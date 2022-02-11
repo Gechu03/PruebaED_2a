@@ -7,8 +7,8 @@ import static org.junit.jupiter.api.Assertions.*;
 import org.junit.jupiter.api.Test;
 
 class Testing {
-	private Persona primero = new Persona("12345678M", "Manolito","Apel");	
-	private Persona Segundo = new Persona("1234567M", "Manolito","Apel");
+	private Persona primero = new Persona("12345678M", "Manolito1","Ape1");	
+	private Persona segundo = new Persona("1234567M", "Manolito2","Ape2");
 	private String DNI = primero.getDni(); 
 	@Test
 	void test() {
@@ -35,13 +35,17 @@ class Testing {
 	
 	@Test
 	void testSetDNI() throws Exception {
-		assertNotEquals(primero.getDni(), Segundo.getDni());
-		primero.setDni("12345678M");
-		assertEquals(primero.getDni(), Segundo.getDni());
+		assertNotEquals(primero.getDni(), segundo.getDni());
+		segundo.setDni("12345678M");
+		assertEquals(primero.getDni(), segundo.getDni());
 	}
 	
 	
 	@Test
-	void testGetNombre
+	void testGetNombre() {
+		assertNotEquals(primero.getNombre(), segundo.getNombre());
+		assertEquals(primero.getNombre(), "Manolito1");
+		assertEquals("Manolito2", segundo.getNombre());
+	}
 	
 }
