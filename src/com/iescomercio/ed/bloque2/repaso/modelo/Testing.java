@@ -7,8 +7,9 @@ import static org.junit.jupiter.api.Assertions.*;
 import org.junit.jupiter.api.Test;
 
 class Testing {
-	private Persona modelo = new Persona("12345678M", "Manolito","Apel");	
-	private String DNI = modelo.getDni(); 
+	private Persona primero = new Persona("12345678M", "Manolito","Apel");	
+	private Persona Segundo = new Persona("1234567M", "Manolito","Apel");
+	private String DNI = primero.getDni(); 
 	@Test
 	void test() {
 		fail("Not yet implemented");
@@ -17,16 +18,16 @@ class Testing {
 	@Test
 	void testContructor() {
 		
-		assertEquals(modelo, new Persona("12345678M", "Manolito","Apel"));
-		assertNotEquals(modelo, new Persona("12345678", "Manolito","Apel"));
-		assertEquals(modelo, new Persona("12345678M", "Mao","Apel"));
-		assertEquals(modelo, new Persona("12345678M", "Manolito","Al"));
+		assertEquals(primero, new Persona("12345678M", "Manolito","Apel"));
+		assertNotEquals(primero, new Persona("12345678", "Manolito","Apel"));
+		assertEquals(primero, new Persona("12345678M", "Mao","Apel"));
+		assertEquals(primero, new Persona("12345678M", "Manolito","Al"));
 	}
 	
 	@Test
 	void testGetDni(){
-		Persona cambia = new Persona("12345678M", "Manolito","Apel");
-		assertEquals(DNI, cambia.getDni());
+		
+		assertEquals(DNI, primero.getDni());
 		assertNotEquals(DNI, "zxc");
 		assertEquals(DNI,"12345678M");
 		assertNotEquals(DNI,"1234578M");
@@ -34,11 +35,13 @@ class Testing {
 	
 	@Test
 	void testSetDNI() throws Exception {
-		modelo.setDni("1234566M");
-		assertNotEquals(modelo.getDni(), DNI);
-		modelo.setDni("12345678M");
-		assertEquals(modelo.getDni(), DNI);
-		
-		
+		assertNotEquals(primero.getDni(), Segundo.getDni());
+		primero.setDni("12345678M");
+		assertEquals(primero.getDni(), Segundo.getDni());
 	}
+	
+	
+	@Test
+	void testGetNombre
+	
 }
