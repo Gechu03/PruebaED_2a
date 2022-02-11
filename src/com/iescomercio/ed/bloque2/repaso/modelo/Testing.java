@@ -48,4 +48,9 @@ class Testing {
 		assertEquals("Manolito2", segundo.getNombre());
 	}
 	
+	void testSetNombre() {
+		primero.setNombre("Manolo");
+		assertEquals(primero.getNombre(), "Manolo");
+	}
+	
 }
