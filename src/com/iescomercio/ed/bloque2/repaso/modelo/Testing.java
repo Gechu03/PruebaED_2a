@@ -7,13 +7,11 @@ import static org.junit.jupiter.api.Assertions.*;
 import org.junit.jupiter.api.Test;
 
 class Testing {
+
 	private Persona primero = new Persona("12345678M", "Manolito1","Ape1");	
 	private Persona segundo = new Persona("1234567M", "Manolito2","Ape2");
 	private String DNI = primero.getDni(); 
-	@Test
-	void test() {
-		fail("Not yet implemented");
-	}
+	
 
 	@Test
 	void testContructor() {
@@ -38,8 +36,11 @@ class Testing {
 		assertNotEquals(primero.getDni(), segundo.getDni());
 		segundo.setDni("12345678M");
 		assertEquals(primero.getDni(), segundo.getDni());
+		
+			
+			assertThrows(Exception.class, () -> {segundo.setDni("12345678");});
+		
 	}
-	
 	
 	@Test
 	void testGetNombre() {

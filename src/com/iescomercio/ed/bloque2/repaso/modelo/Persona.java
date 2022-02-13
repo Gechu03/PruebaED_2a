@@ -28,7 +28,7 @@ public class Persona{
 	/*
 	 * Documentar y crear test unitario
 	 * */
-	public void setDni(String dni) throws Exception {
+	public void setDni(String dni) throws Exception{
 		if(Character.isLetter(dni.charAt(dni.length()-1))) {
 			this.dni=dni;
 		}else {
