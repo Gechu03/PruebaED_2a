@@ -29,7 +29,10 @@ public class Curso {
 		listaAlumnos.add(p);
 	}
 	
-	
+	/**
+	 * Devulve la cantidad de alumnos que tenemos en el curso
+	 * @return devuelde el numero de alumnos
+	 */
 	public int size() {
 		return listaAlumnos.size();
 	}
