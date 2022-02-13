@@ -46,4 +46,8 @@ public class TestingCurso {
 		assertFalse(curso1.estaRegistrado("22345678M")); 
 	}
 	
+	@Test
+	void TestConstructorVacio() {
+		curso1 = new Curso();
+	}
 }
