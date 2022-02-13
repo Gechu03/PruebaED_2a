@@ -54,10 +54,6 @@ public class Curso {
 	public Curso(List<Persona> aux) {
 		listaAlumnos= aux;
 	}
-	/*
-	 * Documentar y crear test unitario
-	 * */
-	public Integer numeroAlumnos() {return listaAlumnos.size();}
 	
 	
 	public void mostrarTodos() {

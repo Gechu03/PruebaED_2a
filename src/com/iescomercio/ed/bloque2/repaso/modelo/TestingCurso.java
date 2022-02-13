@@ -50,4 +50,14 @@ public class TestingCurso {
 	void TestConstructorVacio() {
 		curso1 = new Curso();
 	}
+	
+	@Test
+	void TestSize() {
+		listaAlumnos.add(primero);
+		listaAlumnos.add(segundo);
+		curso1 = new Curso(listaAlumnos);
+		int aux = curso1.size();
+		curso1.aniadirAlumno(tercero);
+		assertEquals(aux, curso1.size()-1);
+	}
 }
