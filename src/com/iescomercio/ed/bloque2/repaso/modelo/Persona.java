@@ -30,7 +30,11 @@ public class Persona{
 	}
 	
 	
-	
+	/**
+	 * Cambiamos el Dni de la persona pero antes comprobamos si tiene una letra al final y ni no la tiene lanza una excepccion
+	 * @param dni Dni que vamos a comprobar
+	 * @throws Exception Devulve la excecion cuando lo que se introduce no tiene una letra al final
+	 */
 	public void setDni(String dni) throws Exception{
 		if(Character.isLetter(dni.charAt(dni.length()-1))) {
 			this.dni=dni;
