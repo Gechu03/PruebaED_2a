@@ -7,9 +7,12 @@ public class Curso {
 	
 	private List<Persona> listaAlumnos;
 
-	/*
-	 * Documentar y crear test unitario
-	 * */
+	/**
+	 * Compruba si el DNi se encutra el curos y elimina alumno
+	 * @param dni
+	 * @throws Exception Saca la exccepcion si el DNi recibido no tiene la longitud adecuada
+	 * 
+	 */
 	public void eliminarAlumno(String dni) throws Exception {
 		if(dni.length()==9) {//comprobar la longitud del dni
 			listaAlumnos.remove(new Persona(dni, "", "")); //solo hace falta el dni
@@ -18,9 +21,7 @@ public class Curso {
 		}
 	}
 	
-	/*
-	 * Documentar y crear test unitario
-	 * */
+	
 	public void aniadirAlumno(Persona p) {
 		listaAlumnos.add(p);
 	}
