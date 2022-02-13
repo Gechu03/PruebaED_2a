@@ -69,7 +69,10 @@ public class Persona{
 		return apellido1;
 	}
 	
-	
+	/**Establece el apellido de la persona
+	 * 
+	 * @param nombre Apellido que le establecemos a la persona
+	 */
 	public void setApellido1(String apellido1) {
 		this.apellido1 = apellido1;
 	}
