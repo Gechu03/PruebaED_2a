@@ -25,6 +25,10 @@ public class Curso {
 		listaAlumnos.add(p);
 	}
 	
+	
+	public int size() {
+		return listaAlumnos.size();
+	}
 	/*
 	 * Documentar y crear test unitario
 	 * */
@@ -47,6 +51,9 @@ public class Curso {
 		listaAlumnos= new ArrayList<Persona>();
 	}
 	
+	public Curso(List<Persona> aux) {
+		listaAlumnos= aux;
+	}
 	/*
 	 * Documentar y crear test unitario
 	 * */
