@@ -57,9 +57,12 @@ public class Curso {
 		listaAlumnos= aux;
 	}
 	
-	/*
-	 * Documentar y crear test unitario
-	 * */
+	/**
+	 * Esta funcion devulve el numero de alimnos que tiene el curso
+	 * @deprecated
+	 * @return devolveria el numero de los alumnos
+	 */
+	
 	public Integer numeroAlumnos() {return listaAlumnos.size();}
 	
 	public void mostrarTodos() {
