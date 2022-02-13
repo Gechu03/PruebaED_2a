@@ -21,7 +21,10 @@ public class Curso {
 		}
 	}
 	
-	
+	/**
+	 * Añadimos un alumno al curso
+	 * @param p
+	 */
 	public void aniadirAlumno(Persona p) {
 		listaAlumnos.add(p);
 	}
