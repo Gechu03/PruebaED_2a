@@ -46,9 +46,9 @@ public class Curso {
 		return encontrado;
 	}
 	
-	/*
-	 * Documentar y crear test unitario
-	 * */
+	/**
+	 * Constructor de curso que se incializa todo vacio
+	 */
 	public Curso() {
 		listaAlumnos= new ArrayList<Persona>();
 	}
