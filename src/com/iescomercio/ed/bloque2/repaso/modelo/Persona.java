@@ -43,7 +43,10 @@ public class Persona{
 		}
 	}
 	
-	
+	/**
+	 * Devulve el nombre de la persona
+	 * @return nombre de la persona.
+	 */
 	public String getNombre() {
 		return nombre;
 	}
