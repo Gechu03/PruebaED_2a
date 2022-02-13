@@ -29,8 +29,7 @@ public class Persona{
 	 * Documentar y crear test unitario
 	 * */
 	public void setDni(String dni) throws Exception {
-		//comprobacion de si el ultimo caracter es una letra
-		if(Character.isLetter(dni.charAt(dni.length()))) {
+		if(Character.isLetter(dni.charAt(dni.length()-1))) {
 			this.dni=dni;
 		}else {
 			throw new Exception("El ultimo caracter introducido no es una letra");
