@@ -8,26 +8,34 @@ public class Persona{
 	
 	public Persona() {}
 	
-	/*
-	 * Documentar y crear test unitario
-	 * */
+	/**
+	 * Incicalizamos las varaibles con los datos recibidos
+	 * @param dni 
+	 * @param nombre
+	 * @param apellido1
+	 * @author Eduardo
+	 * 
+	 */
 	public Persona(String dni, String nombre, String apellido1) {
 		this.dni = dni;
 		this.nombre = nombre;
 		this.apellido1 = apellido1;
 	}
 	
-	/*
-	 * Documentar y crear test unitario
-	 * */
+	/**
+	 * Devuelde el DNi de la persona
+	 * 
+	 */
 	public String getDni() {
 		return dni;
 	}
 	
 	
-	/*
-	 * Documentar y crear test unitario
-	 * */
+	/**
+	 * Cambiamos el Dni de la persona pero antes comprobamos si tiene una letra al final y ni no la tiene lanza una excepccion
+	 * @param dni Dni que vamos a comprobar
+	 * @throws Exception Devulve la excecion cuando lo que se introduce no tiene una letra al final
+	 */
 	public void setDni(String dni) throws Exception{
 		if(Character.isLetter(dni.charAt(dni.length()-1))) {
 			this.dni=dni;
@@ -36,30 +44,34 @@ public class Persona{
 		}
 	}
 	
-	/*
-	 * Documentar y crear test unitario
-	 * */
+	/**
+	 * Devulve el nombre de la persona
+	 * @return nombre de la persona.
+	 */
 	public String getNombre() {
 		return nombre;
 	}
 	
-	/*
-	 * Documentar y crear test unitario
-	 * */
+	/**Establece el nombre de la persona
+	 * 
+	 * @param nombre Nombre que le establecemos a la persona
+	 */
 	public void setNombre(String nombre) {
 		this.nombre = nombre;
 	}
 	
-	/*
-	 * Documentar y crear test unitario
-	 * */
+	/**
+	 * Devulve el apellido de la persona
+	 * @return 
+	 */
 	public String getApellido1() {
 		return apellido1;
 	}
 	
-	/*
-	 * Documentar y crear test unitario
-	 * */
+	/**Establece el apellido de la persona
+	 * 
+	 * @param nombre Apellido que le establecemos a la persona
+	 */
 	public void setApellido1(String apellido1) {
 		this.apellido1 = apellido1;
 	}
