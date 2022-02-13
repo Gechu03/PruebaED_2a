@@ -60,7 +60,11 @@ public class Persona{
 		this.nombre = nombre;
 	}
 	
-	
+	/**
+	 * Devulve el apellido de la persona
+	 * @return 
+	 */
+
 	public String getApellido1() {
 		return apellido1;
 	}
