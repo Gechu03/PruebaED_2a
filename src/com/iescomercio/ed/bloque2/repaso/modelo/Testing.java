@@ -54,4 +54,21 @@ class Testing {
 		assertEquals(primero.getNombre(), "Manolo");
 	}
 	
+	
+	@Test
+	void testGetApellido() {
+		assertNotEquals(primero.getApellido1(), segundo.getApellido1());
+		assertEquals(primero.getApellido1(), "Ape1");
+		assertEquals("Ape2", segundo.getApellido1());
+	}
+	
+	@Test
+	void testSetApellido1() {
+		assertNotEquals(primero.getApellido1(), segundo.getApellido1());
+		segundo.setApellido1("Ape1");
+		assertEquals(segundo.getApellido1(), primero.getApellido1());
+	}
+	
+	
+	
 }
