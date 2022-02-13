@@ -29,9 +29,11 @@ public class Curso {
 	public int size() {
 		return listaAlumnos.size();
 	}
-	/*
-	 * Documentar y crear test unitario
-	 * */
+	/**
+	 * Busca el DNI de una persona y se esta se encuentra en el curso lo elimina
+	 * @param dni Este el Dni con el que vamos a buscar a la persona
+	 * @return Devulve verdadero si el usuario se a eliminado, false de lo contrario
+	 */
 	public Boolean estaRegistrado(String dni) {
 		int i =0;
 		Boolean encontrado=false;
@@ -55,6 +57,10 @@ public class Curso {
 		listaAlumnos= aux;
 	}
 	
+	/*
+	 * Documentar y crear test unitario
+	 * */
+	public Integer numeroAlumnos() {return listaAlumnos.size();}
 	
 	public void mostrarTodos() {
 		for (Persona persona : listaAlumnos) {
