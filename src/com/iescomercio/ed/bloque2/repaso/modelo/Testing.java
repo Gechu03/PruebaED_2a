@@ -37,8 +37,7 @@ class Testing {
 		segundo.setDni("12345678M");
 		assertEquals(primero.getDni(), segundo.getDni());
 		
-			
-			assertThrows(Exception.class, () -> {segundo.setDni("12345678");});
+		assertThrows(Exception.class,() -> {segundo.setDni("12345678");} );
 		
 	}
 	
